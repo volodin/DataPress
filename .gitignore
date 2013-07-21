@@ -1,0 +1,9 @@
+*.exe
+*.dll
+*.pdb
+*.tlb
+*.tlh
+*.log
+*.cache
+[Rr]elease*/
+[Dd]ebug*/
