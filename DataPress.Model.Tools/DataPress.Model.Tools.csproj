@@ -40,18 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AndFilter.cs" />
-    <Compile Include="CompositeFilter.cs" />
+    <Compile Include="Filters\AndFilter.cs" />
+    <Compile Include="Filters\CompositeFilter.cs" />
     <Compile Include="Expressions\ExpressionExtensions.cs" />
-    <Compile Include="Filter.cs" />
+    <Compile Include="Filters\Filter.cs" />
+    <Compile Include="ICommandHandler.cs" />
     <Compile Include="IExtractor.cs" />
-    <Compile Include="IFilter.cs" />
-    <Compile Include="ISelector.cs" />
-    <Compile Include="NotFilter.cs" />
+    <Compile Include="Filters\IFilter.cs" />
+    <Compile Include="IProjection.cs" />
+    <Compile Include="Projection.cs" />
+    <Compile Include="QueryableExtensions.cs" />
+    <Compile Include="Selectors\ISelector.cs" />
+    <Compile Include="Filters\NotFilter.cs" />
     <Compile Include="Expressions\ParameterExpressionRewriter.cs" />
-    <Compile Include="OrFilter.cs" />
-    <Compile Include="PageSelector.cs" />
+    <Compile Include="Filters\OrFilter.cs" />
+    <Compile Include="PageExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selectors\Selector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

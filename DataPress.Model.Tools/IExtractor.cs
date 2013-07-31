@@ -8,6 +8,8 @@ namespace DataPress.Model.Tools
 {
     public interface IExtractor<T>
     {
-        Expression<Func<IQueryable<T>, IQueryable<T>>> Predicate { get; }
+        //Expression<Func<IQueryable<T>, IQueryable<T>>> Predicate { get; }
+
+        IQueryable<T> Extract(IQueryable<T> source);
     }
 }

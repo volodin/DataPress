@@ -50,6 +50,7 @@ namespace DataPress.Model.Tools
             return first.Compose(second, Expression.OrElse);
         }
 
+        /*
         public static Expression<Func<Tin, Tout>> Pipe<Tin, T, Tout>(this Expression<Func<Tin, T>> first, Expression<Func<T, Tout>> second)
         {
             // Замена именованных параметров второго выражения соответствующими параметрами первого
@@ -61,7 +62,7 @@ namespace DataPress.Model.Tools
                 Expression.Call(first.Body, "Select", new Type[] { typeof(T), typeof(Tout) }, secondBody), 
                 first.Parameters);
         }
-
+        */
         /// <summary>
         /// Составить выражение из текущего и заданного
         /// </summary>
